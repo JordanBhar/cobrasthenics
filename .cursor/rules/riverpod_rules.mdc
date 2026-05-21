@@ -1,0 +1,14 @@
+---
+description: Riverpod state management rules.
+globs:
+  - "lib/**/*.dart"
+alwaysApply: false
+---
+
+# Riverpod
+
+- Put app-wide providers in `lib/core/di/providers.dart`.
+- Put feature providers in `lib/features/<feature>/presentation/providers/`.
+- Keep provider state immutable where practical.
+- Avoid reading providers in domain entities.
+- Prefer `AsyncValue` for async UI state.

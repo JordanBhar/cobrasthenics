@@ -1,0 +1,14 @@
+---
+description: UI and design system rules.
+globs:
+  - "lib/**/*.dart"
+alwaysApply: false
+---
+
+# UI
+
+- Use theme tokens from `lib/app/theme/`.
+- Avoid raw colors, spacing, and text styles in widgets.
+- Put reusable UI components under `lib/shared/widgets/`.
+- Keep screens focused on layout and orchestration.
+- Make states explicit: loading, empty, error, and success.

@@ -1,0 +1,3 @@
+class IsarService {
+  const IsarService();
+}

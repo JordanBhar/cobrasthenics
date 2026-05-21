@@ -1,0 +1,15 @@
+---
+description: Firebase integration rules.
+globs:
+  - "lib/**/*.dart"
+  - "firebase/**/*"
+alwaysApply: false
+---
+
+# Firebase
+
+- Keep Firebase wrappers in `lib/core/services/`.
+- Keep collection path constants in `lib/core/constants/firestore_paths.dart`.
+- Do not access Firestore directly from widgets.
+- Update `firebase/firestore.rules` and `firebase/firestore.indexes.json` with schema changes.
+- Keep generated options in `lib/firebase_options.dart`.

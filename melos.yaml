@@ -1,0 +1,8 @@
+name: cobrasthenics_app
+
+packages:
+  - .
+
+command:
+  bootstrap:
+    usePubspecOverrides: true

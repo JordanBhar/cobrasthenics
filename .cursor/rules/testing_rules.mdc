@@ -1,0 +1,14 @@
+---
+description: Testing rules.
+globs:
+  - "test/**/*.dart"
+alwaysApply: false
+---
+
+# Testing
+
+- Put unit tests in `test/unit/`.
+- Put widget tests in `test/widget/`.
+- Put integration tests in `test/integration/`.
+- Keep reusable fixtures in `test/helpers/` and fakes in `test/mocks/`.
+- Add tests for critical domain logic and user-facing flows.

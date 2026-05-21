@@ -1,0 +1,14 @@
+---
+description: Flutter architecture rules for Cobrasthenics.
+globs:
+  - "lib/**/*.dart"
+alwaysApply: true
+---
+
+# Flutter Architecture
+
+- Keep app bootstrapping in `lib/main.dart` and app composition in `lib/app/`.
+- Organize user-facing work by feature under `lib/features/<feature>/`.
+- Use `domain`, `data`, and `presentation` boundaries for features that have real business logic.
+- Keep shared UI in `lib/shared/widgets/` and platform/service code in `lib/core/`.
+- Prefer small widgets, explicit dependencies, and feature-local providers.

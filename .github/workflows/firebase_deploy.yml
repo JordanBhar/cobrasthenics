@@ -1,0 +1,15 @@
+name: Firebase Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: w9jds/firebase-action@v13.22.1
+        with:
+          args: deploy --only firestore,storage
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
