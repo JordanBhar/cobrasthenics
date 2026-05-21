@@ -114,6 +114,12 @@ flutter pub get
 flutter run
 ```
 
+For environment-specific API URLs:
+
+```bash
+flutter run --dart-define=APP_ENV=development --dart-define=API_BASE_URL=https://dev-api.example.com
+```
+
 ### Analyze and test
 
 ```bash
@@ -142,6 +148,7 @@ Then review:
 
 - Keep UI code inside feature presentation folders or `shared/widgets`.
 - Keep app-wide styling in `lib/app/theme`.
+- Keep real API keys in ignored local files, never in committed source.
 - Prefer injected data and repository contracts over direct Firebase calls from screens.
 - Keep shared widgets small and categorized by responsibility.
 - Use the docs folder as the source of truth for architecture and product planning.

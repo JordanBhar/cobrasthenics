@@ -43,3 +43,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local environment and API secrets
+.env
+.env.*
+!.env.example
+lib/core/constants/api_credentials.dart
