@@ -3,6 +3,15 @@ allprojects {
         google()
         mavenCentral()
     }
+
+    configurations.configureEach {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "androidx.datastore") {
+                useVersion("1.2.1")
+                because("Use the current stable DataStore native libraries for 16 KB page-size compatibility.")
+            }
+        }
+    }
 }
 
 val newBuildDir: Directory =
